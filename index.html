@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jayaraman Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+
+ 
+<link rel="icon" type="image/png" href="assets/img/profile-img.jpg">
+ 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("kz6aJvMq0VQP085vR");
+})();
+</script>
+
+<style>
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+    position: relative;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Success Message Styles */
+  .success-message {
+    font-size: 20px;
+    color: #28a745; /* Green color for success */
+  }
+  
+  .loading-message {
+    font-size: 20px;
+    color: #007bff; /* Blue color for loading */
+  }
+
+  /* Success Message Styles */
+  .success-message {
+    font-size: 20px;
+    color: #28a745; /* Green color for success */
+  }
+</style>
+
+</head>
+
+<body>
+<script type="text/javascript">
+function sendEmail() {
+var params = {
+from_name : document.getElementById("full_name").value,
+email_id : document.getElementById("email_id").value,
+message : document.getElementById("message").value,
+Mobile : document.getElementById("Mobile").value,
+subject : document.getElementById("subject").value
+}
+// Show the loading message
+var loadingMessage = document.getElementById("loadingMessage");
+loadingMessage.style.display = "block";
+
+// Send the email
+emailjs.send("service_snyqiw2", "template_9yqsona", params)
+  .then(function(res) {
+    // Hide the loading message
+    loadingMessage.style.display = "none";
+
+    // Show the success message
+    var successMessage = document.getElementById("successMessage");
+    successMessage.style.display = "block";
+
+    // Add a click event listener to close the success message (optional)
+    successMessage.addEventListener("click", function() {
+      successMessage.style.display = "none";
+    });
+  });
+
+
+
+
+
+}
+
+</script>
+
+
+ 
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  
+
+
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Jayaraman</a></h1>
+        <div class="social-links mt-3 text-center">
+         
+          <a href="https://www.facebook.com/profile.php?id=100008024327954&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/_mr__j_a_y_?igshid=ZDdkNTZiNTM=" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/jayaraman-r-a66b9621b" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#work-experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>JAYARAMAN</h1>
+      <p>I'm <span class="typed" data-typed-items="Creator,FullStack-Developer,Analyst"></span></p>
+    </div>
+  </section>
+
+  <main id="main">
+
+ 
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+         
+          <h2>About</h2>
+          <p>Hi, I'm Jayaraman. I am an enthusiastic, self-motivated, reliable, and responsible individual with a strong work ethic. Currently, I am working as a developer and have developed a keen interest in full-stack development. I am passionate about continuously improving my skills and contributing effectively to projects.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" style="border-radius: 30px;" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" style="border-radius: 30px;" alt="image">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            
+            <div class="row">
+              <div class="col-lg-10 align-items-center justify-content-center" style="padding: 20px; padding-left: 40px;">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>17 Jan 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Web:</strong><span>jayaraman2003.000webhostapp.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 96003 77859</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Cuddalore dt, TamilNadu</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BCA-Bachelor of computer Application</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Mail:</strong> <span>jayaramanravi2003@gmail.com</span></li>
+
+                </ul>
+              </div>
+              <!-- <div class="col-lg-5">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BCA-Bachelor of computer Application</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Mail:</strong> <span>jayaramanravi2003@gmail.com</span></li>
+                  
+                </ul>
+              </div> -->
+            </div>
+          
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+   
+  
+
+
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <h3>Programming Skills</h3>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Bootstrap <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">React <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">JAVA <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Spring boot <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQL<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Server<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Website analysis<i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>           
+           
+
+          </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section  class="skills section-bg">
+      <div class="section-title">
+        <h2>&emsp13;Course Training</h2>
+        <p class="align-items-center justify-content-center " style="padding-left: 20px;"> &emsp13;Java Fullstack Developer:<span class="text-success"><b> Successfully Completed </b></span>   Fullstack Web Devlopment Training Program at
+          <b> BesantTechnologies </b><br> <i class="bi bi-geo-alt "></i> Tambaram,Chennai </p>
+          <br>
+          <h3 class="section-title">&emsp13; Certificate
+             <i class="bi bi-patch-check-fill"></i></h3>
+          <div class="container">
+            <center>
+              
+            <div class=" card border-danger bg bg-danger p-2 rounded" style="width:18rem">
+            <img data-aos="zoom-in" class="mw-100"src="besant.jpg">
+          </div>
+        </center>
+          </div>
+        </section>
+
+
+        <section  class="skills section-bg">
+          <div class="section-title">
+            <h2>&emsp13;INTERNSHIP</h2>
+            <p style="padding-left: 20px;">  &emsp13;Java Fullstack Developer:<span class="text-success"><b> Successfully Completed </b></span> Java Fullstack Devlopment INTERNSHIP at
+              Inmakes Info Tech Private LTD</b></br><i class="bi bi-geo-alt "></i> Kochi,Kerala </p>
+              <br>
+              <h3 class="section-title">&emsp13; Certificate
+                 <i class="bi bi-patch-check-fill"></i></h3>
+              <div class="container">
+                <center>
+                <div class=" card border-danger bg bg-primary p-2 rounded" style="width:18rem">
+                <img  data-aos="zoom-out" class="mw-100"src="inmakes.jpg">
+              </div>
+            </center>
+              </div>
+            </section>
+
+  <section id="work-experience" class="skills section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>&emsp13;Work Experience</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up">
+        <div class="work-entry">
+          <h3 class="resume-title"style="color: darkslateblue; font-weight: 10px"><b>Java Programmer</b></h3>
+          <h4 class="section-title" style="color: darkslateblue; font-weight: 40px;">  &emsp13; &emsp13;Rocket Finance Private Limited, Chennai</h4>
+          <h5> &emsp13; &emsp13;May 15, 2023 - Present</h5>
+		  
+          <p>
+           &emsp13;  As a Java Programmer at Rocket Finance, I am responsible for developing and maintaining
+            Java-based applications. My role includes working with Spring Boot, Postman, MySQL, AWS
+            production setup, Cloud Log Watch, policy preparations, and managing
+            data on Google Drive.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up">
+        <div class="work-entry">
+          <h3 class="resume-title " style="color: darkslateblue; font-weight: 40px"><b>Developer</b></h3>
+          <h4 class="section-title primary"style="color: darkslateblue; font-weight: 40px"> &emsp13; &emsp13;HEPL | House of websites</h4>
+          <h5> &emsp13; &emsp13;May 20, 2024 - Present</h5>
+		  
+          <p>
+            &emsp; As a Developer at HEPL, my responsibilities include developing and maintaining APIs using Java and Spring Boot, creating user interfaces with React, and handling server deployment. I also manage website analysis and ensure smooth deployment processes. Additionally, I contribute to AWS production setups, monitor server performance, and collaborate on data management and analysis to enhance overall application functionality and user experience.
+         </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+         <p><h3>Career Objective :</h3>
+I am a passionate and dedicated Full Stack Developer with a strong foundation in web development technologies. Seeking a challenging position in a reputable organization that allows me to leverage my technical skills and creativity to build innovative and user-friendly web applications. I am committed to continuous learning and growth in the field of software development, and I aim to contribute my expertise to the success of the company while advancing my career in a dynamic environment.</p>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>JAYARAMAN</h4>
+              <ul>
+                <li>Address : 27 Anna Nagar Kurinjipadi,Cuddalore dt TamilNadu</li>
+                <li>Mobile: 9600377859</li>
+                <li>Email : Jayaramanravi2003@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>MCA - Master Of Computer Application</h4>
+              <h5>2023 - 2024</h5>
+              <p><em>SRM Nagar, Kattankulathur - 603 203
+                Chengalpattu District, Tamil Nadu.</em></p>
+              <p>Percentage : 82.9% ~</p>
+            </div>
+            <div class="resume-item">
+              <h4>BCA - Bachelor Of Computer Application</h4>
+              <h5>2019 - 2022</h5>
+              <p><em>Jawahar Science College, Neyveli T.S, TamilNadu</em></p>
+              <p>Percentage : 77.9%</p>
+            </div>
+            <div class="resume-item">
+              <h4>Higher Secondary School</h4>
+              <h5>2018 - 2019</h5>
+              <p><em>St Paul Matriculation Higer Secondary School, Kurinjipadi,Cuddalore dt TamilNadu</em></p>
+              <p>Percentage : 73.3%</p>
+            </div>
+
+            <div class="resume-item">
+              <h4> Secondary School Leaving Certificate</h4>
+              <h5>2016 - 2017</h5>
+              <p><em>St Paul Matriculation Higer Secondary School, Kurinjipadi,Cuddalore dt TamilNadu</em></p>
+              <p>Percentage : 83.3%</p>
+            </div>
+          </div>
+         
+        </div>
+
+      </div>
+    </section>
+
+  
+
+    
+
+    
+
+            
+
+           
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>27 Anna Nagar Kurinjipadi,Cuddalore dt,TamilNadu </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>Jayaramanravi2003@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>9600377859</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+
+
+            
+
+
+            <form  method="post" class="card p-3 shadow-lg">
+              <div class="row ">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input  class="form-control" type="text" id="full_name" required/>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input class="form-control" type="email" id="email_id" required/>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="name">Mobile</label>
+                <input type="text" class="form-control" name="Mobile" id="Mobile" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" id="message" required></textarea>             
+               </div><br>
+              
+              <div class="text-center"><input type="button" value="Send Email" 
+               class="btn btn-primary" onclick="sendEmail()" /></div>
+			   
+			   <!-- Loading Message -->
+<div id="loadingMessage" class="loading-message" style="display: none;">
+  Sending your email...
+</div>
+
+<!-- Success Message -->
+<div id="successMessage" class="success-message" style="display: none;">
+  Your query has been successfully sent to Mr. Jayaraman!
+</div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+  </main>
+
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>JAYARAMAN_DEVELOPER</span></strong>
+      </div>
+      <div class="credits">
+         Designed by  JAYARAMAN</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
+
+  
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
